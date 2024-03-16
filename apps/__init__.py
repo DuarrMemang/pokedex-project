@@ -29,5 +29,5 @@ login_manager.login_view = "login"
 login_manager.login_message_category = "info"
 cors = CORS(app)
 
-from apps.routes import *
-from apps.model import *
+from apps.users.routes import *
+from apps.users.model import *
