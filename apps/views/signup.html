@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: "Pixelify Sans", sans-serif;
-            background: url(../../static/img/pokemon.gif) center/cover no-repeat;
+            background: url(pokemon.gif) center/cover no-repeat;
             margin: 0;
             padding: 0;
             display: flex;
@@ -53,14 +53,16 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Login</h2>
+        <h2>Sign Up</h2>
         <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
                         
-            <button type="button" onclick="submitForm() ">Login</button>
+            <button type="button" onclick="submitForm() ">Create</button>
             <a href=""></a>
         </form>
     </div>
