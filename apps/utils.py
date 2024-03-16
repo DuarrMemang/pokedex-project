@@ -7,7 +7,7 @@ from flask import current_app
 from wtforms.validators import ValidationError
 
 from apps import login_manager
-from apps.model import User
+from apps.users.model import User
 
 #FORM UTILS
 def exists_email(form, email):
