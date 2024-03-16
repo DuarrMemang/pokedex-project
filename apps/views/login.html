@@ -13,8 +13,8 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
         }
 
@@ -48,10 +48,16 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
+        img{
+            display: flex;
+            width: 600px;
+        }
     </style>
     <title>Login Form</title>
 </head>
 <body>
+    <img src="../../static/img/PokeGacha.png" alt="">
     <div class="login-container">
         <h2>Login</h2>
         <form id="loginForm">

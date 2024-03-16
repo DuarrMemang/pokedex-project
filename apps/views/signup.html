@@ -9,12 +9,12 @@
     <style>
         body {
             font-family: "Pixelify Sans", sans-serif;
-            background: url(pokemon.gif) center/cover no-repeat;
+            background: url(../../static/img/pokemon.gif) center/cover no-repeat;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
         }
 
@@ -48,10 +48,15 @@
             border-radius: 4px;
             cursor: pointer;
         }
+        img{
+            display: flex;
+            width: 600px;
+        }
     </style>
-    <title>Login Form</title>
+    <title>SignUp Form</title>
 </head>
 <body>
+    <img src="../../static/img/PokeGacha.png" alt="">
     <div class="login-container">
         <h2>Sign Up</h2>
         <form id="loginForm">
