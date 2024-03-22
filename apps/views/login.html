@@ -9,12 +9,12 @@
     <style>
         body {
             font-family: "Pixelify Sans", sans-serif;
-            background: url(pokemon.gif) center/cover no-repeat;
+            background: url(../../static/img/pokemon.gif) center/cover no-repeat;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
         }
 
@@ -22,6 +22,8 @@
             font-family: "Pixelify Sans", sans-serif;
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
+            width: 300px;
+            height: 350px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -39,21 +41,28 @@
             box-sizing: border-box;
         }
 
-        button {
+        .btn-primary {
             font-family: "Pixelify Sans", sans-serif;
+            width: 100px;
             background-color: #4caf50;
             color: #fff;
             padding: 10px;
             border: none;
             border-radius: 4px;
+            margin-left: 95px;
             cursor: pointer;
+        }
+        img{
+            display: flex;
+            width: 600px;
         }
     </style>
     <title>Login Form</title>
 </head>
 <body>
     {% block content %}
-    <div class="container">
+    <img src="../../static/img/PokeGacha.png" alt="">
+    <div class="login-container">
         <form method="POST" action="" class="form-signin">
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
@@ -91,12 +100,10 @@
 
                 </div>
             </fieldset>
-            <div class="text-center">
+            <div class="button">
                 {{ form.submit(class="btn btn-primary btn-block") }}
             </div>
-            <small class="form-text text-muted text-center">
-                <a href="{{ url_for('signup') }}">Belum punya akun ?</a>
-            </small>
+            
 
         </form>
     </div>
