@@ -1,0 +1,74 @@
+body {
+    height: 97vh;
+    background-image: linear-gradient(rgb(83, 9, 9), red);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    /* background-image: linear-gradient(to bottom right, white, gray); */
+    background-image: linear-gradient(to right, red , rgb(132, 3, 3), rgb(91, 2, 2));
+    box-shadow: 10px 10px 10px black;
+    border: solid rgba(239, 108, 21, 0.831);
+}
+
+div.nav-bar {
+    display: flex;
+}
+
+nav {
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+nav a {
+    font-size: 25px;
+    padding-right: 100px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+div.find {
+    margin-top: 10px;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 90%;
+    background: #f1f1f1;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+  
+form.example button {
+    float: left;
+    width: 3%;
+    height: 42px;
+    padding: 10px;
+    background: red;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+  
+form.example button:hover {
+    background: brown;
+}
+  
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
