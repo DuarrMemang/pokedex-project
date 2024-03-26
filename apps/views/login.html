@@ -61,7 +61,7 @@
 </head>
 <body>
     {% block content %}
-    <img src="../../static/img/PokeGacha.png" alt="">
+    <img src="{{url_for('static', filename='img/PokeGacha.png')}}" alt="">
     <div class="login-container">
         <form method="POST" action="" class="form-signin">
             {{ form.hidden_tag() }}
