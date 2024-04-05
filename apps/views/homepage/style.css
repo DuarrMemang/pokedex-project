@@ -1,74 +1,147 @@
-body {
-    height: 97vh;
-    background-image: linear-gradient(rgb(83, 9, 9), red);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    background-color: rgb(37, 38, 48);
+    padding: 40px 100px;
+    height: 100vh;
+}
+
+.home {
+    position: relative;
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(47, 48, 56);
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    font-family: "Pixelify Sans", sans-serif;
+    margin-bottom: 50px;
+
+}
+
+nav .logo{
+    cursor: pointer;
+    width: 15%;
+}
+
+nav .login{
+    width: 20%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+nav .login li{
+    list-style: none;
+}
+
+nav .login a{   
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login2 {
+    padding: 10px 30px;
+    background-image: linear-gradient(to right, rgb(245, 108, 108), rgb(58, 0, 112));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.signup {
+    color: rgb(182, 61, 61);
+}
+
+.home2{
+    color: rgba(224, 112, 112, 0.753);
+}
+
+nav .login a:hover{
+    background-image: linear-gradient(to right, rgb(245, 84, 84) rgb(44, 1, 85));
+}
+
+nav .nav_Link{
+    width: 45%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+nav .nav_Link li{
+    list-style: none;
+}
+
+nav .nav_Link a{
+    color: rgba(186, 208, 233, 0.466);
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+}
+nav .nav_Link a:hover{
+    color: rgba(224, 112, 112, 0.753);
+    transition: all 0.3s ease;
+}
+
+.Profile {
+    display: flex;
+    width: 10%;
+    height: 50px;
+    color: rgb(202, 202, 255);
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.box1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+}
+
+.left1{
+    width: 50%;
+}
+
+.right1 {
+    display: flex;
+    width: 50%;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
-header {
-    width: 100%;
-    height: 100px;
-    /* background-image: linear-gradient(to bottom right, white, gray); */
-    background-image: linear-gradient(to right, red , rgb(132, 3, 3), rgb(91, 2, 2));
-    box-shadow: 10px 10px 10px black;
-    border: solid rgba(239, 108, 21, 0.831);
-}
-
-div.nav-bar {
-    display: flex;
-}
-
-nav {
-    justify-content: space-evenly;
-    margin-top: 5px;
-}
-
-nav a {
-    font-size: 25px;
-    padding-right: 100px;
-    margin-left: 20px;
+.CollectNowButton {
+    padding: 10px 30px;
+    border-radius: 3px;
+    color: white;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    background: linear-gradient(to right, rgb(255, 99, 99), rgb(117, 107, 255));
 }
 
-div.find {
-    margin-top: 10px;
+.YourPokemonsH1{
+    font-size: 36px;
+    background: linear-gradient(to right, rgb(255, 99, 99), rgb(117, 107, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
-form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 90%;
-    background: #f1f1f1;
-    margin-left: 15px;
-    border-radius: 10px;
+.mewImg{
+    width: 400px;
 }
-  
-form.example button {
-    float: left;
-    width: 3%;
-    height: 42px;
-    padding: 10px;
-    background: red;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-    margin-left: 20px;
-    border-radius: 10px;
-}
-  
-form.example button:hover {
-    background: brown;
-}
-  
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
+
+.LogoImg{
+    width: 150px;
 }
