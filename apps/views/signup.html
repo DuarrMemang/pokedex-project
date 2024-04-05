@@ -21,9 +21,9 @@
         .signup-container {
             font-family: "Pixelify Sans", sans-serif;
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
+            padding: 15px;
             width: 300px;
-            height: 535px;
+            height: 430px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -85,22 +85,6 @@
                 </div>
 
                 <div class="form-group">
-                    {{ form.fullname.label(class="form-label") }}
-
-                    {% if form.fullname.errors %}
-                        {{ form.fullname(class="form-control is-invalid") }}
-                        <div class="invalid-feedback">
-                            {% for error in form.fullname.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        </div>
-                    {% else %}
-                        {{ form.fullname(class="form-control") }}
-                    {% endif %}
-
-                </div>
-
-                <div class="form-group">
                     {{ form.email.label(class="form-label") }}
 
                     {% if form.email.errors %}
@@ -152,32 +136,6 @@
                 {{ form.submit(class="btn btn-primary btn-block") }}
             </div>
             
-
-    <title>SignUp Form</title>
 </head>
-<body>
-    <img src="../../static/img/PokeGacha.png" alt="">
-    <div class="login-container">
-        <h2>Sign Up</h2>
-        <form id="loginForm">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-                        
-            <button type="button" onclick="submitForm() ">Create</button>
-            <a href=""></a>
-        </form>
-    </div>
-{% endblock %}
-
-
-    <script>
-        function submitForm() {
-
-        }
-    </script>
-</body>
+    {% endblock %}
 </html>
